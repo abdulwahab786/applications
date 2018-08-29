@@ -30,8 +30,8 @@
         {!! Form::text('password',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
-        {!! Form::label('files','Files') !!}
-        {!! Form::file('files',null,['class'=>'form-control']) !!}
+        {!! Form::label('photo_id','photo') !!}
+        {!! Form::file('photo_id',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
         {!! Form::submit('create post',['class'=>'btn btn-primary']) !!}

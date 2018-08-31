@@ -25,7 +25,7 @@
                 <tr>
                     <td>{{$post->id}}</td>
                     <td>{{$post->user->name}}</td>
-                    <td>{{$post->category_id}}</td>
+                    <td>{{$post->category ? $post->category->name : 'uncategorie'}}</td>
                     <td><img height="50" src="{{$post->photo ? $post->photo->file : 'https://placehold.it/400*400'}}" alt=""></td>
 
                     <td>{{$post->title}}</td>

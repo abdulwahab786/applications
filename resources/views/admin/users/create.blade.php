@@ -8,6 +8,7 @@
 
 
     <h1>create users</h1>
+    <div class="row">
     {!! Form::open(['method'=>'POST','action'=>'AdminUsersController@store','files'=>true]) !!}
     {{csrf_field()}}
 <div class="form-group">
@@ -35,8 +36,11 @@
         {!! Form::file('photo_id',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
-        {!! Form::submit('create post',['class'=>'btn btn-primary']) !!}
+        {!! Form::submit('create user',['class'=>'btn btn-primary']) !!}
     </div>
     {!!Form::close() !!}
+    </div>
+    <div class="row">
 @include('includes.form_error')
+    </div>
 @stop
